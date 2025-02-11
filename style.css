@@ -1,0 +1,159 @@
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
+body {
+  color: white;
+}
+#sample img {
+  border-radius: 20px;
+  color: white;
+  border: 2px solid rgb(39, 48, 5);
+  box-shadow: 7px 7px 7px rgb(242, 242, 5);
+}
+#sample img:hover {
+  transform:rotate(-5deg);
+}
+
+#code img {
+  border-radius: 20px;
+  color: white;
+  border: 2px solid rgb(39, 48, 5);
+  box-shadow: 7px 7px 7px rgb(242, 242, 5);
+  
+}
+
+#code img:hover {
+  transform:rotate(-5deg);
+}
+.wrapper {
+  display: flex;
+
+  justify-content: center;
+}
+#header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+.container {
+  display: grid;
+  grid-template-rows: 20vh 60vh 0.5fr 0.5fr 30vh;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4%;
+  grid-template-areas:
+    "img head head head"
+    "obj obj profile profile"
+    "project project pro pro"
+    "work work co co"
+    "con con con con";
+  width: 70vw;
+
+  padding: 10px;
+}
+#footer {
+  grid-area: foot;
+  text-align: center;
+}
+#code {
+  grid-area: co;
+}
+#sample {
+  grid-area: project;
+  text-align: center;
+}
+#image {
+  grid-area: img;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgb(4, 67, 99) ;
+  border: 2px solid rgb(100, 24, 68);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#header {
+  grid-area: head;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(100, 24, 68);
+  box-shadow: 7px 7px 7px rgb(4, 67, 99);
+  background-image: linear-gradient(
+    to left,
+    rgba(5, 48, 68, 0),
+    rgb(40, 5, 35)
+  );
+}
+#obj {
+  grid-area: obj;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, rgb(2, 21, 24), rgb(19, 76, 89));
+  color: white;
+  border: 2px solid rgb(208, 235, 11);
+  box-shadow: 7px 7px 7px rgb(55, 4, 66);
+}
+#profile {
+  grid-area: profile;
+  text-align:center;
+  border-radius: 15px;
+  border: 2px solid rgb(100, 24, 68);
+  box-shadow: 7px 7px 7px rgb(4, 67, 99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#project {
+  grid-area: pro;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, rgb(2, 21, 24), rgb(19, 76, 89));
+  color: white;
+  border: 2px solid rgb(208, 235, 11);
+  box-shadow: 7px 7px 7px rgb(55, 4, 66);
+}
+#wor {
+  grid-area: work;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, rgb(2, 21, 24), rgb(19, 76, 89));
+  color: white;
+  border: 2px solid rgb(208, 235, 11);
+  box-shadow: 7px 7px 7px rgb(55, 4, 66);
+}
+#contact {
+  grid-area: con;
+  text-align: center;
+  text-decoration-color: aquamarine; 
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(179, 59, 59)); */
+  box-shadow: 7px 7px 5px rgb(4, 67, 99) ;
+  border: 3px solid rgb(100, 24, 68);
+  /* background-color: 2px solid rgb(100, 24, 68);  */
+  background-image: linear-gradient( to right, rgb(100, 24, 68), rgb(0 , 0, 0));
+}
+.box {
+  border-radius: 10px;
+  padding: 5px;
+  /* background-color:  solid rgb(100, 24, 68); */
+}
+a {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  font-style: italic;
+}
+a:hover {
+  color: yellow;
+}
+#contact a {
+  margin-left: 30px;
+}
+h2 {
+  text-decoration:underline;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(44, 140, 161);
+}
+h3 {
+  color: yellow;
+  font-style: italic;
+}
